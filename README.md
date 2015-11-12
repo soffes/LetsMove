@@ -1,3 +1,7 @@
+This fork adds [Carthage](https://github.com/carthage/carthage) support.
+
+---
+
 LetsMove
 ========
 

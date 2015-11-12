@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "LetsMove"
   s.version      = "1.19"
   s.summary      = "Moves a running Mac application to the /Applications directory."
-  s.homepage     = "https://github.com/potionfactory/LetsMove/"
+  s.homepage     = "https://github.com/potionfactory/LetsMove"
   s.license      = 'Public Domain'
   s.author       = { "Andy Kim" => "andy@potionfactory.com" }
 
@@ -13,11 +13,10 @@ Pod::Spec.new do |s|
     :tag => "v1.19"
   }
 
-  s.source_files = '*.{h,m}'
-  s.exclude_files = 'main.m', 'LetsMoveAppDelegate.{h,m}'
-  s.public_header_files = 'PFMoveApplication.h'
+  s.source_files = 'LetsMove/*.{h,m}'
+  s.public_header_files = 'LetsMove/PFMoveApplication.h'
 
-  s.resources = '*.lproj'
+  s.resources = 'LetsMove/Resources/*.lproj'
   s.requires_arc = false
 end
 

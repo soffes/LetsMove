@@ -15,9 +15,15 @@
 #import <sys/param.h>
 #import <sys/mount.h>
 
+@interface _PFMoveApplication : NSObject
+@end
+
+@implementation _PFMoveApplication
+@end
+
 // Strings
 // These are macros to be able to use custom i18n tools
-#define _I10NS(nsstr) NSLocalizedStringFromTable(nsstr, @"MoveApplication", nil)
+#define _I10NS(key) [[NSBundle bundleForClass:[_PFMoveApplication class]] localizedStringForKey:key value:nil table:@"MoveApplication"]
 #define kStrMoveApplicationCouldNotMove _I10NS(@"Could not move to Applications folder")
 #define kStrMoveApplicationQuestionTitle  _I10NS(@"Move to Applications folder?")
 #define kStrMoveApplicationQuestionTitleHome _I10NS(@"Move to Applications folder in your Home folder?")
@@ -39,7 +45,6 @@
 
 
 static NSString *AlertSuppressKey = @"moveToApplicationsFolderAlertSuppress";
-
 
 // Helper functions
 static NSString *PreferredInstallLocation(BOOL *isUserDirectory);

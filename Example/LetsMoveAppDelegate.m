@@ -7,7 +7,7 @@
 //
 
 #import "LetsMoveAppDelegate.h"
-#import "PFMoveApplication.h"
+#import <LetsMove/LetsMove.h>
 
 @implementation LetsMoveAppDelegate
 
