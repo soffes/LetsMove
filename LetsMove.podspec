@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => "https://github.com/potionfactory/LetsMove.git",
-    :tag => "v1.19"
+    :tag => "v1.20"
   }
 
   s.source_files = 'LetsMove/*.{h,m}'
